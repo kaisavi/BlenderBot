@@ -28,7 +28,7 @@ namespace BlenderBot.Scripts
 
                 return prefs;
             }
-			else if (Directory.Exists(docs))
+			else if (Directory.Exists(docs + @"\Blenderbot"))
             {
                 File.Copy(@"Resources\prefs.cfg",Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\BlenderBot\prefs.cfg");
                 string[] prefs = File.ReadAllLines(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\BlenderBot\prefs.cfg");

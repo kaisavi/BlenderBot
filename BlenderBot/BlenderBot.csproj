@@ -213,7 +213,7 @@
   <ItemGroup>
     <Content Include="Resources\Open.png" />
     <None Include="Resources\prefs.cfg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\Warning.png" />
   </ItemGroup>
