@@ -152,7 +152,7 @@ namespace BlenderBot.Forms
             await Scripts.Notify.MainAsync(args[2].ToString(), Convert.ToUInt64(args[1]));
             if (Shutdown.Checked)
             {
-                Process.Start("CMD.exe", "shutdown /s");
+                Process.Start("CMD.exe", "/c shutdown /s /f /t 5");
             }
 
             Environment.Exit(0);
