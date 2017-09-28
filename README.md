@@ -42,11 +42,12 @@ Blenderbot is a utility that I made to run along-side Blender. When configured c
  ---- | ----
  File | Enter the name of your .blend file (don't include the extension) or click the icon to browse your projects folder.
  Frame | The frame which you would like to render. Slide, use the arrows, or enter a custom value.
- Shutdown | if this is checked, your computer will shutdown after the render has finished (you will still be notified).
- 
+ Shutdown | If this is checked, your computer will shutdown after the render has finished (you will still be notified).
+ Preview | If this is checked, the application will attempt to send the result to you with the notification (see notes).
  ---
  
  # Notes
  * Animations are not yet supported.
- * Planned feature: Render image sent through Discord with notification.
+ * ~~Planned feature: Render image sent through Discord with notification.~~
+ * **WIP** Process image before sending through Discord when the image is too large
  * Considering email, Skype, and possibly SMS notifications.
