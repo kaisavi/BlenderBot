@@ -85,5 +85,29 @@ namespace BlenderBot.Scripts
             _return[2] = Token._Token();
             return _return;
         }
+
+        internal static string Preview(string PDir, string Format, string Frame, string Name)
+        {
+
+            
+            switch (Frame.Length)
+            {
+                case 1:
+                    Frame = $"000{Frame}";
+                    break;
+                case 2:
+                    Frame = $"00{Frame}";
+                    break;
+                case 3:
+                    Frame = $"0{Frame}";
+                    break;
+                default:
+                    break;
+            }
+            var inf = new DirectoryInfo(PDir);
+            string Dir = PDir + (from f in inf.GetFiles() orderby f.LastWriteTime descending select f).FirstOrDefault().ToString();
+            Console.WriteLine(Dir);
+            return Dir;
+        }
     }
 }

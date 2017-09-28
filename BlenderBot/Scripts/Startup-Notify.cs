@@ -22,7 +22,7 @@ namespace BlenderBot.Scripts
             
             
                 
-        public static async Task MainAsync(string Token, ulong CID)
+        public static async Task MainAsync(string Token, string renderDir, string animDir, ulong CID, bool render, bool animation, bool preview)
         {
             var discord = new DiscordClient(new DiscordConfiguration
             {
@@ -30,7 +30,30 @@ namespace BlenderBot.Scripts
                 TokenType = TokenType.Bot
             });
                 DSharpPlus.Entities.DiscordChannel _channel = await discord.GetChannelAsync(CID);
-                await discord.SendMessageAsync(_channel, "Render Complete! Keep up the good work!");
+            if (render)
+            {
+                long renderSize = new System.IO.FileInfo(renderDir).Length;
+                if (preview)
+                {
+                    if (renderSize > 8000000)
+                    {
+                        await _channel.SendMessageAsync("Finished! Keep up the good work (preview image too large)!");
+                    }
+                    else
+                    {
+                        await _channel.SendFileAsync(renderDir, "Finished! Keep up the good work!");
+                    }
+                }
+                else
+                {
+                    await _channel.SendMessageAsync("Finished! Keep up the good work!");
+                }
+            }
+            if (animation)
+            {
+
+            }
+
 
             discord.SetWebSocketClient<WebSocketSharpClient>();
             await discord.ConnectAsync();

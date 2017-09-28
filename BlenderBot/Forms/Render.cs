@@ -149,7 +149,8 @@ namespace BlenderBot.Forms
             object[] args = Scripts.Args.Append(Scripts.Args.Get(), File.Text, Frame.Text);
             Scripts.Start.Render(args[0]);
             Console.WriteLine("Finished!");
-            await Scripts.Notify.MainAsync(args[2].ToString(), Convert.ToUInt64(args[1]));
+            string Dir = Scripts.Args.Preview(Scripts.Args.Get()[1], Scripts.Args.Get()[3], Frame.Text, File.Text);
+            await Scripts.Notify.MainAsync(args[2].ToString(), Dir, "",  Convert.ToUInt64(args[1]), true, false, Preview.Checked);
             if (Shutdown.Checked)
             {
                 Process.Start("CMD.exe", "/c shutdown /s /f /t 5");

@@ -43,6 +43,7 @@
             this.BeginRender = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             this.SelectBlend = new System.Windows.Forms.OpenFileDialog();
+            this.Preview = new System.Windows.Forms.CheckBox();
             this.SliderContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -135,6 +136,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.Preview);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Open);
             this.panel1.Controls.Add(this.File);
@@ -186,7 +188,7 @@
             this.Shutdown.AutoSize = true;
             this.Shutdown.FlatAppearance.BorderSize = 0;
             this.Shutdown.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Shutdown.Location = new System.Drawing.Point(60, 70);
+            this.Shutdown.Location = new System.Drawing.Point(5, 70);
             this.Shutdown.Name = "Shutdown";
             this.Shutdown.Size = new System.Drawing.Size(80, 19);
             this.Shutdown.TabIndex = 5;
@@ -202,7 +204,7 @@
             this.BeginRender.Location = new System.Drawing.Point(114, 95);
             this.BeginRender.Name = "BeginRender";
             this.BeginRender.Size = new System.Drawing.Size(75, 27);
-            this.BeginRender.TabIndex = 6;
+            this.BeginRender.TabIndex = 7;
             this.BeginRender.Text = "Start";
             this.BeginRender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BeginRender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -217,7 +219,7 @@
             this.Back.Location = new System.Drawing.Point(5, 95);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(75, 27);
-            this.Back.TabIndex = 7;
+            this.Back.TabIndex = 8;
             this.Back.Text = "Back";
             this.Back.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Back.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -228,6 +230,18 @@
             // 
             this.SelectBlend.Filter = ".blend Files | *.blend";
             this.SelectBlend.Title = "Select a .blend File";
+            // 
+            // Preview
+            // 
+            this.Preview.AutoSize = true;
+            this.Preview.FlatAppearance.BorderSize = 0;
+            this.Preview.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Preview.Location = new System.Drawing.Point(122, 70);
+            this.Preview.Name = "Preview";
+            this.Preview.Size = new System.Drawing.Size(67, 19);
+            this.Preview.TabIndex = 6;
+            this.Preview.Text = "Preview";
+            this.Preview.UseVisualStyleBackColor = false;
             // 
             // Render
             // 
@@ -271,5 +285,6 @@
         private System.Windows.Forms.TextBox File;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.OpenFileDialog SelectBlend;
+        private System.Windows.Forms.CheckBox Preview;
     }
 }
