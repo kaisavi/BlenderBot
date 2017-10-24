@@ -10,11 +10,13 @@ namespace BlenderBot.Scripts
 {
     public class Start
     {
-        public static void Render (object args)
+        public static int Render (object args)
         {
             var _Render = Process.Start("CMD.exe", args.ToString());
             _Render.WaitForExit();
-            
+            Console.WriteLine($"Finished on {_Render.ExitTime.Date.ToLongDateString()} at {_Render.ExitTime.ToLongTimeString()}");
+
+   return _Render.ExitCode;
         }
     }
 }

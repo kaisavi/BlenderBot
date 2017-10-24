@@ -147,10 +147,10 @@ namespace BlenderBot.Forms
         private async void BeginRender_Click(object sender, EventArgs e)
         {
             object[] args = Scripts.Args.Append(Scripts.Args.Get(), File.Text, Frame.Text);
-            Scripts.Start.Render(args[0]);
+            int Result = Scripts.Start.Render(args[0]);
             Console.WriteLine("Finished!");
             string Dir = Scripts.Args.Preview(Scripts.Args.Get()[1], Scripts.Args.Get()[3], Frame.Text, File.Text);
-            await Scripts.Notify.MainAsync(args[2].ToString(), Dir, "",  Convert.ToUInt64(args[1]), true, false, Preview.Checked);
+            await Scripts.Notify.MainAsync(args[2].ToString(), Dir, "",  Convert.ToUInt64(args[1]), true, false, Preview.Checked, Result, args[0]);
             if (Shutdown.Checked)
             {
                 Process.Start("CMD.exe", "/c shutdown /s /f /t 5");
@@ -176,6 +176,11 @@ namespace BlenderBot.Forms
                 _StartupForm = new StartupForm();
                 _StartupForm.Show();
             }
+        }
+
+        private void Preview_CheckedChanged(object sender, EventArgs e)
+        {
+            Preview.ForeColor = Preview.Checked ? Color.White : Color.Black;
         }
     }
 }

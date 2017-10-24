@@ -36,6 +36,7 @@
             this.Dec = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Preview = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Open = new System.Windows.Forms.Button();
             this.File = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.BeginRender = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             this.SelectBlend = new System.Windows.Forms.OpenFileDialog();
-            this.Preview = new System.Windows.Forms.CheckBox();
             this.SliderContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -151,6 +151,19 @@
             this.panel1.TabIndex = 6;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dragging);
             // 
+            // Preview
+            // 
+            this.Preview.AutoSize = true;
+            this.Preview.FlatAppearance.BorderSize = 0;
+            this.Preview.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Preview.Location = new System.Drawing.Point(122, 70);
+            this.Preview.Name = "Preview";
+            this.Preview.Size = new System.Drawing.Size(67, 19);
+            this.Preview.TabIndex = 6;
+            this.Preview.Text = "Preview";
+            this.Preview.UseVisualStyleBackColor = false;
+            this.Preview.CheckedChanged += new System.EventHandler(this.Preview_CheckedChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -230,18 +243,6 @@
             // 
             this.SelectBlend.Filter = ".blend Files | *.blend";
             this.SelectBlend.Title = "Select a .blend File";
-            // 
-            // Preview
-            // 
-            this.Preview.AutoSize = true;
-            this.Preview.FlatAppearance.BorderSize = 0;
-            this.Preview.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Preview.Location = new System.Drawing.Point(122, 70);
-            this.Preview.Name = "Preview";
-            this.Preview.Size = new System.Drawing.Size(67, 19);
-            this.Preview.TabIndex = 6;
-            this.Preview.Text = "Preview";
-            this.Preview.UseVisualStyleBackColor = false;
             // 
             // Render
             // 
