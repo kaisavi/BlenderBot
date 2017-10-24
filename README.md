@@ -51,3 +51,4 @@ Blenderbot is a utility that I made to run along-side Blender. When configured c
  * ~~Planned feature: Render image sent through Discord with notification.~~
  * **WIP** Process image before sending through Discord when the image is too large
  * Considering email, Skype, and possibly SMS notifications.
+ * Crash reporting to user
