@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1AE36273D8679869EF0D0466317946D4"
-        "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1AE36273D8679869EF0D0466317946D4"
-        "OwnerKey" = "8:_FEC1E25595548655EC7AE253700F679D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_28A01B6C37E39F54BD78DAC87568C1E4"
         "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,19 +22,7 @@
         "Entry"
         {
         "MsmKey" = "8:_28A01B6C37E39F54BD78DAC87568C1E4"
-        "OwnerKey" = "8:_1AE36273D8679869EF0D0466317946D4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2D60F6322729C23E6ECA48FB948FD48B"
-        "OwnerKey" = "8:_FEC1E25595548655EC7AE253700F679D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2D60F6322729C23E6ECA48FB948FD48B"
-        "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
+        "OwnerKey" = "8:_C622B88CC1083FC658436CE6D320DA1B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -57,13 +33,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_64BF14C1A777B23FA70BC0060D47C807"
-        "OwnerKey" = "8:_1AE36273D8679869EF0D0466317946D4"
+        "MsmKey" = "8:_7DE19EEE882D3B698E05751AB296D446"
+        "OwnerKey" = "8:_A05E8C95A55C5E8788F69D81D0213FCD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_64BF14C1A777B23FA70BC0060D47C807"
+        "MsmKey" = "8:_7DE19EEE882D3B698E05751AB296D446"
         "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -75,13 +51,37 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A05E8C95A55C5E8788F69D81D0213FCD"
+        "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C622B88CC1083FC658436CE6D320DA1B"
+        "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C622B88CC1083FC658436CE6D320DA1B"
+        "OwnerKey" = "8:_A05E8C95A55C5E8788F69D81D0213FCD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FEC1E25595548655EC7AE253700F679D"
+        "MsmKey" = "8:_FCD65FF7CED5143CD253597E9DAE138E"
+        "OwnerKey" = "8:_C622B88CC1083FC658436CE6D320DA1B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FCD65FF7CED5143CD253597E9DAE138E"
         "OwnerKey" = "8:_D1F61AE3308541F8B46C125E36B26C89"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -94,25 +94,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FEC1E25595548655EC7AE253700F679D"
+        "OwnerKey" = "8:_A05E8C95A55C5E8788F69D81D0213FCD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2D60F6322729C23E6ECA48FB948FD48B"
+        "OwnerKey" = "8:_7DE19EEE882D3B698E05751AB296D446"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1AE36273D8679869EF0D0466317946D4"
+        "OwnerKey" = "8:_C622B88CC1083FC658436CE6D320DA1B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_64BF14C1A777B23FA70BC0060D47C807"
+        "OwnerKey" = "8:_FCD65FF7CED5143CD253597E9DAE138E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -216,37 +216,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1AE36273D8679869EF0D0466317946D4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:DSharpPlus, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_1AE36273D8679869EF0D0466317946D4"
-                    {
-                    "Name" = "8:DSharpPlus.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:DSharpPlus.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_28A01B6C37E39F54BD78DAC87568C1E4"
             {
             "AssemblyRegister" = "3:1"
@@ -261,37 +230,6 @@
                     }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2D60F6322729C23E6ECA48FB948FD48B"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:websocket-sharp, Version=1.0.2.32519, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2D60F6322729C23E6ECA48FB948FD48B"
-                    {
-                    "Name" = "8:websocket-sharp.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:websocket-sharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
@@ -329,20 +267,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_64BF14C1A777B23FA70BC0060D47C807"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7DE19EEE882D3B698E05751AB296D446"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:websocket-sharp, Version=1.0.2.32519, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_64BF14C1A777B23FA70BC0060D47C807"
+                    "_7DE19EEE882D3B698E05751AB296D446"
                     {
-                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Name" = "8:websocket-sharp.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "SourcePath" = "8:websocket-sharp.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
@@ -380,20 +318,82 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FEC1E25595548655EC7AE253700F679D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A05E8C95A55C5E8788F69D81D0213FCD"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:DSharpPlus.WebSocket.WebSocketSharp, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_FEC1E25595548655EC7AE253700F679D"
+                    "_A05E8C95A55C5E8788F69D81D0213FCD"
                     {
                     "Name" = "8:DSharpPlus.WebSocket.WebSocketSharp.dll"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:DSharpPlus.WebSocket.WebSocketSharp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C622B88CC1083FC658436CE6D320DA1B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:DSharpPlus, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C622B88CC1083FC658436CE6D320DA1B"
+                    {
+                    "Name" = "8:DSharpPlus.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:DSharpPlus.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FCD65FF7CED5143CD253597E9DAE138E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FCD65FF7CED5143CD253597E9DAE138E"
+                    {
+                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Newtonsoft.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_64020EB5C08B4FA5906E437E2B8EE9A9"
@@ -478,15 +478,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Blenderbot"
-        "ProductCode" = "8:{507A31CF-1EAE-4118-BD17-4FBA042160A1}"
-        "PackageCode" = "8:{BE1F21CA-E490-4016-A690-8A32349794D7}"
+        "ProductCode" = "8:{B38F1367-EEF7-4F1D-9673-7388927818E9}"
+        "PackageCode" = "8:{675916FF-158D-4305-826B-6D06F8D729D2}"
         "UpgradeCode" = "8:{E32650DF-F6BC-4AFF-A2AC-488631055427}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:2.1.000"
+        "ProductVersion" = "8:2.2.000"
         "Manufacturer" = "8:Onetimetwotimes"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
