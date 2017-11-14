@@ -67,20 +67,40 @@ namespace BlenderBot.Scripts
             File.WriteAllLines(docs + @"\Blenderbot\prefs.cfg", prefs);
         }
 
-        public static object[] Append(string[] prefs, string name, string frame)
+        public static object[] AppendRender(string[] prefs, string name, string frame)
         {
             Console.WriteLine($"{prefs[0]} | {prefs[1]} | {prefs[2]} | {prefs[3]}");
             object[] _return = new object[3];
             if (prefs[3] == "Use Blender Configuration")
             {
-                _return[0] = $"/c {Char.ToString('"') + Char.ToString('"') + prefs[0] + Char.ToString('"')} {Char.ToString('"') + prefs[1] + name}.blend{Char.ToString('"')} -b -o //{name} -f {frame + Char.ToString('"')}";
+                _return[0] = $"/c \"\"{prefs[0]}\" \"{prefs[1] + name}.blend\" -b -o //{name} -f {frame}\"";
                 Console.WriteLine(_return[0]);
             }
             else
             {
-                _return[0] = $"/c {Char.ToString('"') + Char.ToString('"') + prefs[0] + Char.ToString('"')} {Char.ToString('"') + prefs[1] + name}.blend{Char.ToString('"')} -b -o //{name} -F {prefs[3]} -f {frame + Char.ToString('"')}";
+                _return[0] = $"/c \"\"{prefs[0]}\" \"{prefs[1] + name}.blend\" -b -o //{name} -F {prefs[3]} -f {frame}\"";
                 Console.WriteLine(_return[0]);
             }
+            _return[1] = prefs[2];
+            _return[2] = Token._Token();
+            return _return;
+        }
+
+        public static object[] AppendAnimation(string[] prefs, string name, string start, string end)
+        {
+            Console.WriteLine($"{prefs[0]} | {prefs[1]} | {prefs[2]} | {prefs[4]}");
+            object[] _return = new object[3];
+            if (prefs[4] == "Use Blender Configuration")
+            {
+                _return[0] = $"/c \"\"{prefs[0]}\" -b \"{prefs[1] + name}.blend\"  -o //{name}\\{name} -s {start} -e {end} -a\"";
+                Console.WriteLine(_return[0]);
+            }
+            else
+            {
+                _return[0] = $"/c \"\"{prefs[0]}\" -b \"{prefs[1] + name}.blend\"  -o //{name}\\{name} -F {prefs[4]} -s {start} -e {end}  -a\"";
+                Console.WriteLine(_return[0]);
+            }
+
             _return[1] = prefs[2];
             _return[2] = Token._Token();
             return _return;

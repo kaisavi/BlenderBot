@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace BlenderBot.Forms
 {
     public partial class Animation : Form
     {
+        #region Fields
+        public static bool noquit;
         bool slidingStart;
         bool slidingEnd;
         bool slidStart;
@@ -21,6 +24,8 @@ namespace BlenderBot.Forms
         const int WM_NCLBUTTONDOWN = 0xA1;
         const int HT_CAPTION = 0x2;
         StartupForm _StartupForm = Application.OpenForms.Cast<StartupForm>().FirstOrDefault(c => c is StartupForm);
+        #endregion
+
         public Animation()
         {
             InitializeComponent();
@@ -193,8 +198,8 @@ namespace BlenderBot.Forms
                 EndTextbox.Text = End.Text;
                 EndTextbox.Hide();
             }
-            if (Char.IsDigit(e.KeyChar)) return;
-            if (Char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar)) return;
+            if (char.IsControl(e.KeyChar)) return;
             e.Handled = true;
         }
 
@@ -236,6 +241,31 @@ namespace BlenderBot.Forms
         {
             Hide();
             _StartupForm.Show();
+        }
+
+        private async void BeginRender_Click(object sender, EventArgs e)
+        {
+            object[] args = Scripts.Args.AppendAnimation(Scripts.Args.Get(), File.Text, Start.Text, End.Text);
+            int Result = Scripts.Start.Animation(args[0]);
+            Console.WriteLine("Finished!");
+            string Dir = Scripts.Args.Preview(Scripts.Args.Get()[1] + $"\\{File.Text}\\", Scripts.Args.Get()[3], Start.Text, File.Text);
+            await Scripts.Notify.MainAsync(args[2].ToString(), Dir, "", Convert.ToUInt64(args[1]), true, false, Preview.Checked, Result, args[0]);
+            if (Shutdown.Checked)
+            {
+                Process.Start("CMD.exe", "/c shutdown /s /f /t 15");
+            }
+            Console.WriteLine(noquit);
+            if (!noquit)
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void Open_Click(object sender, EventArgs e)
+        {
+            SelectBlend.InitialDirectory = Scripts.Args.Get()[1];
+            SelectBlend.ShowDialog();
+            File.Text = SelectBlend.SafeFileName.Split('.').First();
         }
     }
 }

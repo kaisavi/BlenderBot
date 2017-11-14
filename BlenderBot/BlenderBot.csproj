@@ -147,7 +147,7 @@
     <Compile Include="Scripts\Startup-Notify.cs" />
     <Compile Include="Scripts\Program.cs" />
     <Compile Include="Scripts\Reflector.cs" />
-    <Compile Include="Scripts\StartRender.cs" />
+    <Compile Include="Scripts\Start.cs" />
     <Compile Include="Scripts\Token.cs" />
     <EmbeddedResource Include="Forms\Animation.resx">
       <DependentUpon>Animation.cs</DependentUpon>

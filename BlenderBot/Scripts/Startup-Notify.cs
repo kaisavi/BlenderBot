@@ -16,6 +16,20 @@ namespace BlenderBot.Scripts
         [STAThread]
         public static void Main(string[] args)
         {
+            if (args.Length != 0)
+            {
+            if (args[0] == "-n" || args[0] == "--no-quit")
+            {
+                Forms.Animation.noquit = true;
+                Forms.Render.noquit = true;
+            }
+            }
+            else
+            {
+                Forms.Animation.noquit = false;
+                Forms.Render.noquit = false;
+            }
+
             var StartupForm = new StartupForm();
             Application.Run(StartupForm);
         }
@@ -55,7 +69,7 @@ namespace BlenderBot.Scripts
                 }
                 else
                 {
-                    await _channel.SendMessageAsync($"Your render did not complete successfully (Exit code {Result}). Would you like to try again? (Y/N)");
+                    await _channel.SendMessageAsync($"Your render did not complete successfully (Exit code {Result}). Would you like to try again? (Y/N) *case sensitive*");
 
                 }
             }
@@ -102,7 +116,6 @@ namespace BlenderBot.Scripts
 
             discord.SetWebSocketClient<WebSocketSharpClient>();
             await discord.ConnectAsync();
-            await Task.Delay(-1);
         }
     }
 }

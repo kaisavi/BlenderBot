@@ -40,6 +40,7 @@
             this.EndIncrement = new System.Windows.Forms.Button();
             this.EndDecrement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Preview = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.BeginRender = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.Open = new System.Windows.Forms.Button();
             this.Shutdown = new System.Windows.Forms.CheckBox();
             this.File = new System.Windows.Forms.TextBox();
+            this.SelectBlend = new System.Windows.Forms.OpenFileDialog();
             this.StartContainer.SuspendLayout();
             this.EndContainer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -206,6 +208,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.Preview);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.BeginRender);
             this.panel1.Controls.Add(this.label2);
@@ -221,6 +224,19 @@
             this.panel1.Size = new System.Drawing.Size(205, 157);
             this.panel1.TabIndex = 6;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dragging);
+            // 
+            // Preview
+            // 
+            this.Preview.AutoSize = true;
+            this.Preview.Enabled = false;
+            this.Preview.FlatAppearance.BorderSize = 0;
+            this.Preview.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Preview.Location = new System.Drawing.Point(121, 96);
+            this.Preview.Name = "Preview";
+            this.Preview.Size = new System.Drawing.Size(67, 19);
+            this.Preview.TabIndex = 15;
+            this.Preview.Text = "Preview";
+            this.Preview.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -245,6 +261,7 @@
             this.BeginRender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BeginRender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BeginRender.UseVisualStyleBackColor = true;
+            this.BeginRender.Click += new System.EventHandler(this.BeginRender_Click);
             // 
             // label2
             // 
@@ -293,13 +310,14 @@
             this.Open.Size = new System.Drawing.Size(23, 23);
             this.Open.TabIndex = 1;
             this.Open.UseVisualStyleBackColor = false;
+            this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
             // Shutdown
             // 
             this.Shutdown.AutoSize = true;
             this.Shutdown.FlatAppearance.BorderSize = 0;
             this.Shutdown.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Shutdown.Location = new System.Drawing.Point(57, 96);
+            this.Shutdown.Location = new System.Drawing.Point(10, 96);
             this.Shutdown.Name = "Shutdown";
             this.Shutdown.Size = new System.Drawing.Size(80, 19);
             this.Shutdown.TabIndex = 8;
@@ -313,6 +331,11 @@
             this.File.Name = "File";
             this.File.Size = new System.Drawing.Size(105, 23);
             this.File.TabIndex = 0;
+            // 
+            // SelectBlend
+            // 
+            this.SelectBlend.Filter = ".blend Files | *.blend";
+            this.SelectBlend.Title = "Select a .blend File";
             // 
             // Animation
             // 
@@ -360,5 +383,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox Preview;
+        private System.Windows.Forms.OpenFileDialog SelectBlend;
     }
 }

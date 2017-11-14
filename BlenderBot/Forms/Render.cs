@@ -13,12 +13,13 @@ namespace BlenderBot.Forms
 {
     public partial class Render : Form
     {
-        #region Variables
+        #region Fields
         StartupForm _StartupForm = Application.OpenForms.Cast<StartupForm>().FirstOrDefault(c => c is StartupForm);
         public string[] prefs;
         int slidervalue;
         const int WM_NCLBUTTONDOWN = 0xA1;
         const int HT_CAPTION = 0x2;
+        public static bool noquit;
         bool sliding;
         bool slid;
         #endregion
@@ -113,8 +114,8 @@ namespace BlenderBot.Forms
                 FrameTextbox.Text = Frame.Text;
                 FrameTextbox.Hide();
             }
-            if (Char.IsDigit(e.KeyChar)) return;
-            if (Char.IsControl(e.KeyChar)) return;
+            if (char.IsDigit(e.KeyChar)) return;
+            if (char.IsControl(e.KeyChar)) return;
             e.Handled = true;
         }
 
@@ -146,17 +147,16 @@ namespace BlenderBot.Forms
 
         private async void BeginRender_Click(object sender, EventArgs e)
         {
-            object[] args = Scripts.Args.Append(Scripts.Args.Get(), File.Text, Frame.Text);
+            object[] args = Scripts.Args.AppendRender(Scripts.Args.Get(), File.Text, Frame.Text);
             int Result = Scripts.Start.Render(args[0]);
             Console.WriteLine("Finished!");
             string Dir = Scripts.Args.Preview(Scripts.Args.Get()[1], Scripts.Args.Get()[3], Frame.Text, File.Text);
             await Scripts.Notify.MainAsync(args[2].ToString(), Dir, "",  Convert.ToUInt64(args[1]), true, false, Preview.Checked, Result, args[0]);
             if (Shutdown.Checked)
             {
-                Process.Start("CMD.exe", "/c shutdown /s /f /t 5");
+                Process.Start("CMD.exe", "/c shutdown /s /f /t 15");
             }
-
-            Environment.Exit(0);
+            
         }
 
         private void Back_Click(object sender, EventArgs e)

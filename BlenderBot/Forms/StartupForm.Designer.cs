@@ -88,7 +88,6 @@
             this.Animation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Animation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Animation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Animation.Enabled = false;
             this.Animation.Image = ((System.Drawing.Image)(resources.GetObject("Animation.Image")));
             this.Animation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Animation.Location = new System.Drawing.Point(22, 152);
