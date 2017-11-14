@@ -43,12 +43,24 @@ Blenderbot is a utility that I made to run along-side Blender. When configured c
  File | Enter the name of your .blend file (don't include the extension) or click the icon to browse your projects folder.
  Frame | The frame which you would like to render. Slide, use the arrows, or enter a custom value.
  Shutdown | If this is checked, your computer will shutdown after the render has finished (you will still be notified).
- Preview | If this is checked, the application will attempt to send the result to you with the notification (see notes).
+ Preview | If this is checked, the application will attempt to send the result to you with the notification.<sup>1</sup>
  ---
  
+ ## Animation
+ (This menu is - unsurpisingly - not very different from the **Render** menu)
+ 
+ Control | Usage
+ ---- | ----
+ File | Enter the name of you .blend file (don't include the extension) or click the icon to browse your projects folder.
+ Start | The frame on which you would like to start the animation. Slide, use the arrows, or enter a custom value.
+ End | The frame on which you would like to end the animation. Slide, use the arrows, or enter a custom value.
+ Shutdown | If this is checked, your computer will shutdown after the render has finished (you will still be notified).
+ ~~Preview~~ | ~~If this is checked, the application will attempt to send the result to you with the notification~~<sup>2</sup>
+ 
  # Notes
- * Animations are not yet supported.
+ * ~~Animations are not yet supported.~~
  * ~~Planned feature: Render image sent through Discord with notification.~~
- * **WIP** Process image before sending through Discord when the image is too large
+ * **WIP** Process image before sending through Discord when the image is too large<sup>1<sup>
+  * Animation previews are (somewhat) working, but are not yet supported.<sup>2</sup>
  * Considering email, Skype, and possibly SMS notifications.
  * Crash reporting to user
